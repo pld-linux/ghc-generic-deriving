@@ -13,23 +13,23 @@ Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{v
 # Source0-md5:	a0cddab953bd4d9fa479b16281a14fc0
 URL:		http://hackage.haskell.org/package/generic-deriving
 BuildRequires:	ghc >= 6.12.3
-BuildRequires:	ghc-base >=4.3
-BuildRequires:	ghc-containers >=0.1
+BuildRequires:	ghc-base >= 4.3
+BuildRequires:	ghc-containers >= 0.1
 BuildRequires:	ghc-ghc-prim
 BuildRequires:	ghc-template-haskell >= 2.4
 BuildRequires:	ghc-th-abstraction >= 0.3
 %if %{with prof}
 BuildRequires:	ghc-prof
-BuildRequires:	ghc-base-prof >=4.3
-BuildRequires:	ghc-containers-prof >=0.1
+BuildRequires:	ghc-base-prof >= 4.3
+BuildRequires:	ghc-containers-prof >= 0.1
 BuildRequires:	ghc-ghc-prim-prof
 BuildRequires:	ghc-template-haskell-prof >= 2.4
 BuildRequires:	ghc-th-abstraction-prof >= 0.3
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.608
 %requires_eq	ghc
-Requires:	ghc-base >=4.3
-Requires:	ghc-containers >=0.1
+Requires:	ghc-base >= 4.3
+Requires:	ghc-containers >= 0.1
 Requires:	ghc-ghc-prim
 Requires:	ghc-template-haskell >= 2.4
 Requires:	ghc-th-abstraction >= 0.3
@@ -55,8 +55,8 @@ Summary:	Profiling %{pkgname} library for GHC
 Summary(pl.UTF-8):	Biblioteka profilująca %{pkgname} dla GHC
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	ghc-base-prof >=4.3
-Requires:	ghc-containers-prof >=0.1
+Requires:	ghc-base-prof >= 4.3
+Requires:	ghc-containers-prof >= 0.1
 Requires:	ghc-ghc-prim-prof
 Requires:	ghc-template-haskell-prof >= 2.4
 Requires:	ghc-th-abstraction-prof >= 0.3
