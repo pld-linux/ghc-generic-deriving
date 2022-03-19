@@ -6,7 +6,7 @@
 Summary:	Generic programming library for generalised deriving
 Name:		ghc-%{pkgname}
 Version:	1.13.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages
 Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{version}.tar.gz
