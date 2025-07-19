@@ -13,7 +13,7 @@ Group:		Development/Languages
 Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{version}.tar.gz
 # Source0-md5:	a0cddab953bd4d9fa479b16281a14fc0
 URL:		http://hackage.haskell.org/package/generic-deriving
-BuildRequires:	ghc >= 6.12.3
+BuildRequires:	ghc >= 7.0.1
 BuildRequires:	ghc-base >= 4.3
 BuildRequires:	ghc-base < 5
 BuildRequires:	ghc-containers >= 0.1
@@ -24,7 +24,7 @@ BuildRequires:	ghc-template-haskell < 2.17
 BuildRequires:	ghc-th-abstraction >= 0.3
 BuildRequires:	ghc-th-abstraction < 0.4
 %if %{with prof}
-BuildRequires:	ghc-prof
+BuildRequires:	ghc-prof >= 7.0.1
 BuildRequires:	ghc-base-prof >= 4.3
 BuildRequires:	ghc-containers-prof >= 0.1
 BuildRequires:	ghc-ghc-prim-prof
