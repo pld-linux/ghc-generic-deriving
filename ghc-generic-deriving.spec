@@ -4,6 +4,7 @@
 #
 %define		pkgname	generic-deriving
 Summary:	Generic programming library for generalised deriving
+Summary(pl.UTF-8):	Biblioteka programowania generycznego do uogólnionych wywodów
 Name:		ghc-%{pkgname}
 Version:	1.13.1
 Release:	2
@@ -14,10 +15,14 @@ Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{v
 URL:		http://hackage.haskell.org/package/generic-deriving
 BuildRequires:	ghc >= 6.12.3
 BuildRequires:	ghc-base >= 4.3
+BuildRequires:	ghc-base < 5
 BuildRequires:	ghc-containers >= 0.1
-BuildRequires:	ghc-ghc-prim
+BuildRequires:	ghc-containers < 0.7
+BuildRequires:	ghc-ghc-prim < 1
 BuildRequires:	ghc-template-haskell >= 2.4
+BuildRequires:	ghc-template-haskell < 2.17
 BuildRequires:	ghc-th-abstraction >= 0.3
+BuildRequires:	ghc-th-abstraction < 0.4
 %if %{with prof}
 BuildRequires:	ghc-prof
 BuildRequires:	ghc-base-prof >= 4.3
@@ -47,8 +52,15 @@ This package provides functionality for generalising the deriving
 mechanism in Haskell to arbitrary classes. It was first described in
 the paper:
 
-    A generic deriving mechanism for Haskell. Jose Pedro Magalhaes,
-    Atze Dijkstra, Johan Jeuring, and Andres Loeh. Haskell'10.
+A generic deriving mechanism for Haskell. Jose Pedro Magalhaes, Atze
+Dijkstra, Johan Jeuring, and Andres Loeh. Haskell'10.
+
+%description -l pl.UTF-8
+Ten pakiet dostarcza mechanizm uogólnionych wywodów w Haskellu dla
+dowolych klas. Po raz pierwszy został on opisany w dokumencie:
+
+A generic deriving mechanism for Haskell. Jose Pedro Magalhaes, Atze
+Dijkstra, Johan Jeuring, and Andres Loeh. Haskell'10.
 
 %package prof
 Summary:	Profiling %{pkgname} library for GHC
